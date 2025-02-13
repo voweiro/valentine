@@ -50,7 +50,7 @@ export default function ValentinePage() {
 
           {/* Text Box */}
           <h1 className="text-xl md:text-3xl font-bold text-gray-800">
-            Will you be my Valentine, my cute Idara? 💖
+            idara 💖,  Will you be my Valentine,  🥺🥺🥺 ? 
           </h1>
 
           {/* Buttons */}
