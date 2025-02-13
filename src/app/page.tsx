@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react";
+import Image from "next/image";
+
 
 export default function ValentinePage() {
   const [noButtonPos, setNoButtonPos] = useState({ top: "50%", left: "50%" });
@@ -18,7 +20,7 @@ export default function ValentinePage() {
       {/* Falling Roses Animation */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(15)].map((_, i) => (
-          <img
+          <Image
             key={i}
             src="rose.jpg"
             alt="Rose"
@@ -36,7 +38,7 @@ export default function ValentinePage() {
         <>
           {/* Animated Cat */}
           <div className="w-40 h-40 mb-4">
-            <img
+            <Image
               src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
               alt="Cute Smiling Cat"
               className="w-full h-full object-contain"
