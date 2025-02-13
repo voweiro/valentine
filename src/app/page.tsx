@@ -117,8 +117,21 @@ export default function ValentinePage() {
       ) : (
         // Video Section
         <div className="flex flex-col items-center">
-          <p className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
-            Happy Valentine's Day to the love of my life, my forever sweetheart! 💘💕
+           <p className="text-lg md:text-xl font-bold text-gray-800 mb-4 leading-relaxed">
+            Happy Valentine's Day to the love of my life, my forever sweetheart! 💘💕  
+            You're the sunshine that brightens up my day ☀, the calm in every storm 🌪,  
+            and the safe haven where I can always be myself. 🏠  
+            Your love is my guiding light 💡, my shelter 🏕, and my home. 🏡  
+
+            Every moment I spend with you is a gift 🎁, every kiss a treasure 💋,  
+            and every whispered promise a vow to cherish and adore you forever. 💏  
+            I love you more with each passing day 📆, more with each shared laugh 😂,  
+            and more with each tender touch. ❤️  
+
+            You're the melody that fills my heart with joy 🎶, the rhythm that makes me whole. 🎵  
+            Forever and always, my love, my heart belongs to you. 💗  
+
+            **Happy Valentine's Day, babe!** 🎉💕❤️🥰  
           </p>
           <video
             className="w-[70%] rounded-lg shadow-lg"
