@@ -8,7 +8,6 @@ export default function ValentinePage() {
   const [noButtonPos, setNoButtonPos] = useState({ top: "50%", left: "50%" });
   const [showVideo, setShowVideo] = useState(false);
 
-  // Function to move the "No" button randomly
   const moveNoButton = () => {
     const newX = Math.random() * 80 + 10; // Keeps it within screen
     const newY = Math.random() * 60 + 20;
@@ -22,9 +21,11 @@ export default function ValentinePage() {
         {[...Array(15)].map((_, i) => (
           <Image
             key={i}
-            src="rose.jpg"
+            src="/rose.jpg"
             alt="Rose"
-            className="absolute w-20 h-20 opacity-75 animate-fall"
+            width={40} // Fixed width
+            height={40} // Fixed height
+            className="absolute  opacity-75 animate-fall"
             style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 5}s`,
@@ -42,6 +43,8 @@ export default function ValentinePage() {
               src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
               alt="Cute Smiling Cat"
               className="w-full h-full object-contain"
+              width={100}
+              height={100}
             />
           </div>
 
