@@ -23,8 +23,8 @@ export default function ValentinePage() {
             key={i}
             src="/rose.jpg"
             alt="Rose"
-            width={40} // Fixed width
-            height={40} // Fixed height
+            width={50} // Fixed width
+            height={50} // Fixed height
             className="absolute  opacity-75 animate-fall"
             style={{
               left: `${Math.random() * 100}%`,
