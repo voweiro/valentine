@@ -18,13 +18,8 @@ export default function ValentinePage() {
   const [noButtonPos, setNoButtonPos] = useState({ top: "50%", left: "50%" });
   const [showVideo, setShowVideo] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [isValentine, setIsValentine] = useState(false);
 
   useEffect(() => {
-    const today = new Date();
-    const valentineDate = new Date(today.getFullYear(), 1, 14); // February 14th
-    setIsValentine(today.toDateString() === valentineDate.toDateString());
-
     setTimeout(() => {
       setIsLoading(false);
     }, 3000); // Simulating loading delay
@@ -38,23 +33,6 @@ export default function ValentinePage() {
 
   if (isLoading) {
     return <LoadingPage />;
-  }
-
-  if (!isValentine) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen bg-pink-400 text-center">
-        <h1 className="text-xl md:text-3xl font-bold text-gray-800">
-          Haha! You have to wait until tomorrow! 😂🎉
-        </h1>
-        <Image
-          src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
-          alt="Laughing Cat"
-          width={200}
-          height={200}
-          className="mt-4"
-        />
-      </div>
-    );
   }
 
   return (
@@ -117,7 +95,7 @@ export default function ValentinePage() {
       ) : (
         // Video Section
         <div className="flex flex-col items-center">
-           <p className="text-lg md:text-xl font-bold text-gray-800 mb-4 leading-relaxed">
+          <p className="text-lg md:text-xl font-bold text-gray-800 mb-4 leading-relaxed">
             Happy Valentine's Day to the love of my life, my forever sweetheart! 💘💕  
             You're the sunshine that brightens up my day ☀, the calm in every storm 🌪,  
             and the safe haven where I can always be myself. 🏠  
